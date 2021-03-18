@@ -1,4 +1,5 @@
 var slideIndex = 1;
+var dealIndex = 0;
 showSlides(slideIndex);
 
 // Next/previous controls
@@ -10,6 +11,8 @@ function plusSlides(n) {
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
+
+selectedDeal(0)
 
 function showSlides(n) {
   var slides = document.getElementsByClassName("slidePhoto");
@@ -30,8 +33,11 @@ function showSlides(n) {
 
 function selectedDeal(n) {
     var deal = document.getElementsByClassName("deal");
-    for (var x = 0; x < deals.length; x++) {
-        deal[x].style.className.replace(" selected", "");
+    for (var x = 0; x < deal.length; x++) {
+        deal[n].style.border = '2px solid red';
+        deal[n].style.borderRadius = '6px';
     } 
+
+    console.log('works');
 }
 
