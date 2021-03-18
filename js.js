@@ -34,10 +34,16 @@ function showSlides(n) {
 function selectedDeal(n) {
     var deal = document.getElementsByClassName("deal");
     for (var x = 0; x < deal.length; x++) {
+
+        deal[x].style.borderRadius = '';
+        deal[x].style.border = '';
         deal[n].style.border = '2px solid red';
         deal[n].style.borderRadius = '6px';
     } 
 
     console.log('works');
+}
+function selectBar(n) {
+  
 }
 
