@@ -180,3 +180,21 @@ img {
   align-content: center;
 
 }
+.selectBar3 {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  border: 1px solid rgb(214, 208, 208);
+  border-radius: 6px;
+}
+.selectBar1 {
+  text-align: center;
+  width: 33%;
+  padding: 9px 0;
+  cursor: pointer;
+  border-right: 1px solid rgb(214, 208, 208);
+}
+.description {
+  padding: 15px;
+}
