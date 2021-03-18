@@ -1,13 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link href="https://blogfonts.com/css/aWQ9MTY0NzAzJnN1Yj03MDMmYz1hJnR0Zj1BdmVuaXJOZXh0TFRQcm8tQm9sZC5vdGYmbj1hdmVuaXItbmV4dC1sdC1wcm8/Avenir Next LT Pro.otf" rel="stylesheet" type="text/css"/>    <link rel="stylesheet" href="style.css" />
+    <script src="js.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/42762d49f1.js"
+      crossorigin="anonymous"
+    ></script>
     <title>BETA MEDIA task</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <main>
+      <div class="leftContainer">
+          <div class="slidePhotoContainer">
+            
+            <div class="slidePhoto fade">
+              <img src="assets/swimming pool.jpg" style="width: 100%" />
+              <div class="text">Gausios vandens pramogos</div>
+            </div>
+
+            <div class="slidePhoto fade">
+              <img src="assets/room big.jpg" style="width: 100%" />
+              <div class="text">Dideli apartamentai šeimoms</div>
+            </div>
+
+          <div class="slidePhoto fade">
+            <img src="assets/room small.jpg" style="width: 100%" />
+            <div class="text">Maži apartementai trumpiems apsilankymams</div>
+          </div>
+          <div class="slidePhoto fade">
+            <img src="assets/restoran with wiev.jpg" style="width: 100%" />
+            <div class="text">Restoranas su nuostabiu vaizdus pro langą</div>
+          </div>
+          <div class="slidePhoto fade">
+            <img src="assets/outside green.jpg" style="width: 100%" />
+            <div class="text">
+              Jaukūs pasivaikščiojimai vakare
+            </div>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <div class="discount">
+            <div>-57%</div>
+             </div>
+        </div>
+        <br />
+
+        <div class="smallerPhotos">
+          <img src="assets/swimming pool.jpg" class="botPhoto" onclick="currentSlide(1)"></img>
+          <img src="assets/room big.jpg" class="botPhoto" onclick="currentSlide(2)"></img>
+          <img src="assets/room small.jpg" class="botPhoto" onclick="currentSlide(3)"></img>
+          <img src="assets/restoran with wiev.jpg" class="botPhoto" onclick="currentSlide(4)"></img>
+          <img src="assets/outside green.jpg" class="botPhoto" onclick="currentSlide(5)"></img>
+        </div>
+        <div class="selectBar3">
+          <div class="selectBar1" onclick="selectBar(0)">PASIŪLYMO INFO</div>
+          <div class="selectBar1" onclick="selectBar(1)">SĄLYGOS</div>
+          <div class="selectBar1" onclick="selectBar(2)">ĮVERTINIMAI</div>
+        </div>
+        <div>
+          <div class="description">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quas, enim consequatur dolorem possimus laborum maiores perferendis ut eveniet ipsam. Explicabo quos alias aut asperiores doloribus est consequatur ducimus officia.
+            </p>
+          </div>
+          <div class="description">
+            <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, beatae minima! Omnis praesentium eius atque dolor accusamus, aperiam consequatur animi nemo vitae. Nisi voluptas consequuntur iusto deserunt nobis distinctio aperiam.
+            </p>
+          </div>
+          <div class="description">
+            <p>
+                          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias molestiae facilis nihil animi in! Veniam officia quas facilis architecto, laboriosam repellat voluptatem error porro, necessitatibus obcaecati sapiente ad minima voluptatum.
+            </p>
+          </div>
+        </div>
+        
+      </div>
+      <div class="rightContainer">
+        <h3 style="margin-bottom: 30px;">
+          <strong
+            >Nakvynė Grand SPA LIETUVA su neribotomis vandens pramogimis</strong
+          >
+        </h3>
+        <p style="margin-bottom: 60px;">GRAND SPA LIETUVA</p>
+
+        <h4>
+          <strong><i class="far fa-user"> </i> 2 asmenys</strong>
+        </h4>
+        <h4>
+          <strong><i class="far fa-clock"> </i> 1-2 nakvynės</strong>
+        </h4>
+        <h4>
+          <strong><i class="far fa-calendar"> </i> iki 2021 05 14</strong>
+        </h4>
+        <h3 style="margin-bottom: 3px;"><strong> Nuo</strong></h3>
+        <h1 style="color: #a80752; margin-top: 3px;">69€</h1>
+        <h4 style="color: #a80752;"><strong>pasirinkimai</strong></h4>
+        <div class="line"></div>
+        <div  onclick="selectedDeal(0)" class="deal " style="display: flex; cursor: pointer;">
+          <div class="dealInner">
+            <h4 style="font-weight: 450; margin: auto; padding: 9px;">
+              1 nakvynė su pusryčiais ir neribotomis SPA pramogomis DARBO
+              DIENOMIS
+            </h4>
+          </div>
+          <div>
+            <h4 style="padding: 9px;"><strong>69€</strong></h4>
+          </div>
+        </div>
+        <div onclick="selectedDeal(1)" class="deal" style="display: flex; cursor: pointer;">
+          <div class="dealInner">
+            <h4 style="font-weight: 450; margin: auto; padding: 9px;">
+              2 nakvynės su pusryčiais ir neribotomis SPA pramogomis DARBO
+              DIENOMIS
+            </h4>
+          </div>
+          <div>
+            <h4 style="padding: 9px;"><strong>129€</strong></h4>
+          </div>
+        </div>
+        <div  onclick="selectedDeal(2)" class="deal" style="display: flex; cursor: pointer;">
+          <div class="dealInner">
+            <h4 style="font-weight: 450; margin: auto; padding: 9px;">
+              2 nakvynės su pusryčiais ir neribotomis SPA pramogomis VISOMIS
+              DIENOMIS
+            </h4>
+          </div>
+          <div>
+            <h4 style="padding: 9px;"><strong>171€</strong></h4>
+          </div>
+        </div>
+        <div  onclick="selectedDeal(3)" class="deal" style="display: flex; cursor: pointer;">
+          <div class="dealInner">
+            <h4 style="font-weight: 450; margin: auto; padding: 9px;">
+              2 nakvynės su pusryčiais ir neribotomis SPA pramogomis SAVAITGALĮ
+            </h4>
+          </div>
+          <div>
+            <h4 style="padding: 9px;"><strong>209€</strong></h4>
+          </div>
+        </div>
+        <div class="buyBtn"><h2 style="margin: 0;">Perku <i class="fas fa-shopping-bag"></i></h2> </i></div>
+        <div></div>
+      </div>
+    </main>
+  </body>
 </html>
