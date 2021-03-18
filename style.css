@@ -99,11 +99,12 @@ img {
 .smallerPhotos {
   width: 100%;
   display: flex;
+  justify-content: space-around;
 }
 
 .botPhoto {
   cursor: pointer;
-  width: 20%;
+  flex: 1;
   margin: 0 2px;
   background-color: #bbb;
   display: inline-block;
@@ -183,18 +184,23 @@ img {
 .selectBar3 {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin-top: 30px;
-  border: 1px solid rgb(214, 208, 208);
+  color: #f0f0f0;
   border-radius: 6px;
+  flex-grow: 1;
 }
 .selectBar1 {
   text-align: center;
-  width: 33%;
+  flex: 1;
   padding: 9px 0;
   cursor: pointer;
-  border-right: 1px solid rgb(214, 208, 208);
+  font-weight: 300;
 }
+
 .description {
   padding: 15px;
+}
+p {
+  font-weight: 150;
 }
