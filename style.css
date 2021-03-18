@@ -5,17 +5,17 @@ body {
     Trebuchet MS, sans-serif;
 }
 main {
-  max-width: 1200px;
+  max-width: 900px;
   display: flex;
   margin: auto;
   padding: 30px 0;
 }
 .leftContainer {
-  flex-grow: 7;
+  width: 60%;
 }
 .rightContainer {
   margin-left: 45px;
-  flex-grow: 5;
+  width: 30%;
   padding: 60px 21px;
   background-color: #fafafa;
   border-radius: 6px;
@@ -45,23 +45,18 @@ img {
   border-radius: 6px;
   overflow: hidden;
 }
-* {
-  box-sizing: border-box;
-}
 
-/* Slideshow container */
+
 .slidePhotoContainer {
   max-width: 100%;
   position: relative;
   margin: auto;
 }
 
-/* Hide the images by default */
 .slidePhoto {
   display: none;
 }
 
-/* Next & previous buttons */
 .prev,
 .next {
   cursor: pointer;
@@ -78,19 +73,16 @@ img {
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Caption text */
 .text {
   background-color: white;
   color: black;
@@ -104,10 +96,14 @@ img {
   border-radius: 6px;
 }
 
-/* The dots/bullets/indicators */
+.smallerPhotos {
+  width: 100%;
+  display: flex;
+}
+
 .botPhoto {
   cursor: pointer;
-  height: 60px;
+  width: 20%;
   margin: 0 2px;
   background-color: #bbb;
   display: inline-block;
@@ -115,14 +111,12 @@ img {
   display: inline-block;
 }
 
-.active,
-.botPhoto:hover {
+.active, .botPhoto:hover {
   border: 2px solid #a80752;
   border-radius: 6px;
   overflow: hidden;
 }
 
-/* Fading animation */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -158,5 +152,31 @@ img {
   height: 75px;
   width: 75px;
   text-align: center;
-  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 800px){
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 810px;
+    margin: auto;
+  }
+  .leftContainer {
+    width: 93%;
+    margin: auto;
+  }
+  .rightContainer {
+    width: 93%;
+    margin: 15px auto;
+  }
+}
+.deal {
+  margin: 15px 0;
+}
+.dealInner {
+  display: flex;
+  align-content: center;
+
 }
