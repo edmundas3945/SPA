@@ -1,3 +1,162 @@
+body {
+  margin: 0;
+  width: 100%;
+  font-family: AvenirNextLTPro-Bold, Calibri, Gill Sans, Gill Sans MT,
+    Trebuchet MS, sans-serif;
+}
+main {
+  max-width: 1200px;
+  display: flex;
+  margin: auto;
+  padding: 30px 0;
+}
+.leftContainer {
+  flex-grow: 7;
+}
+.rightContainer {
+  margin-left: 45px;
+  flex-grow: 5;
+  padding: 60px 21px;
+  background-color: #fafafa;
+  border-radius: 6px;
+}
+.far {
+  color: #a80752;
+  margin: 0 6px;
+}
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #f0f0f0;
+  margin-bottom: 15px;
+}
+.buyBtn {
+  width: 100%;
+  border-radius: 6px;
+  background-color: #a80752;
+  text-align: center;
+  color: white;
+  padding: 9px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
 img {
-    border-radius: 3px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slidePhotoContainer {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.slidePhoto {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  padding: 9px 30px;
+  position: absolute;
+  bottom: 9px;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+  border-radius: 6px;
+}
+
+/* The dots/bullets/indicators */
+.botPhoto {
+  cursor: pointer;
+  height: 60px;
+  margin: 0 2px;
+  background-color: #bbb;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  display: inline-block;
+}
+
+.active,
+.botPhoto:hover {
+  border: 2px solid #a80752;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.discount {
+  background-color: #a80752;
+  color: white;
+  font-size: 21px;
+  border-radius: 6px;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  height: 75px;
+  width: 75px;
+  text-align: center;
+  vertical-align: middle;
 }
